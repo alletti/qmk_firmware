@@ -12,6 +12,11 @@
         "*.c": "c",
         "*.cpp": "cpp",
         "*.hpp": "cpp",
-        "xstddef": "c"
+        "xstddef": "c",
+        "__hash_table": "c",
+        "deque": "c",
+        "filesystem": "c",
+        "vector": "c",
+        "*.inc": "c"
     }
 }

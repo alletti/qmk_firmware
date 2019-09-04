@@ -44,6 +44,10 @@ void matrix_scan_kb(void) {
 
 __attribute__ ((weak))
 void matrix_init_user(void) {
+    uprint("matrix_init_user()\n");
+    debug_enable = true;
+    debug_matrix = true;
+    debug_keyboard = true;
 }
 
 __attribute__ ((weak))
@@ -58,6 +62,10 @@ void matrix_init(void)
 
     row_masks[PA] = 0;
     row_masks[PB] = 0;
+
+    debug_enable = true;
+    debug_matrix = true;
+    debug_keyboard = true;
 
     uint8_t row;
     for (row = 0; row < MATRIX_ROWS; row++)
