@@ -10,3 +10,9 @@
 
 // Tap Dance Config
 #define TAPPING_TERM 175
+
+// Override the Grave Esc feature when ALT is pressed. This allows for CMD-ALT-ESC
+#define GRAVE_ESC_ALT_OVERRIDE
+
+// Override the Grave Esc feature when SHIFT is pressed. Cause I need SHIFT-ESC in Slack.
+#define GRAVE_ESC_SHIFT_OVERRIDE
